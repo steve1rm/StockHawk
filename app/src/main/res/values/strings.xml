@@ -31,5 +31,5 @@
 
     <string name="toast_stock_added_no_connectivity">Symbol %s added. Will refresh when network available.</string>
     <string name="toast_no_connectivity">Will refresh when network available.</string>
-
+    <string name="stock_price_out_of_date">No network connection stock prices could be out of date</string>
 </resources>

@@ -81,7 +81,12 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
             }
         }).attachToRecyclerView(stockRecyclerView);
 
-
+        if(!networkUp()) {
+            Toast.makeText(
+                    MainActivity.this,
+                    R.string.stock_price_out_of_date,
+                    Toast.LENGTH_LONG).show();
+        }
     }
 
     private boolean networkUp() {
